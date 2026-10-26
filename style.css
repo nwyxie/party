@@ -25,6 +25,17 @@
     --grey: #c8c8c875;
 }
 
+::selection {
+  background-color: transparent;
+  color: auto;
+}
+
+::-moz-selection {
+  background-color: transparent;
+  color: auto;
+}
+
+
 /* rainbow */
 .rainbow span:nth-child(6n + 1) {color: var(--light-pink);}
 .rainbow span:nth-child(6n + 2) {color: var(--orange);}
