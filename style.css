@@ -1,12 +1,12 @@
 /* typefaces */
 @font-face {
     font-family: "a butterfly";
-    src: url(/party/typefaces/AButterflyOnaDaffodil.ttf);
+    src: url(typefaces/AButterflyOnaDaffodil.ttf);
 }
 
 @font-face {
     font-family: "poxel";
-    src: url(/party/typefaces/poxel-font.ttf);
+    src: url(typefaces/poxel-font.ttf);
 }
 
 :root {
@@ -35,7 +35,7 @@
 
 body {
     background-color: #fff;
-    background-image: url(/party/imgs/plaid.png);
+    background-image: url(imgs/plaid.png);
     background-size: 180px;
     background-repeat: repeat;
 
