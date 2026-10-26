@@ -5,8 +5,8 @@
 }
 
 @font-face {
-    font-family: "poxel";
-    src: url(typefaces/poxel-font.ttf);
+    font-family: "mix";
+    src: url(typefaces/MixStitch.ttf);
 }
 
 :root {
@@ -43,7 +43,7 @@ body {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: clamp(4rem, 18vw, 8rem);
     font-family: "a butterfly";
     color: var(--light-pink);
     text-shadow:
@@ -56,6 +56,11 @@ h1 {
 
     display: flex;
     margin: 0;
+}
+
+mark {
+    background-color: var(--light-pink);
+    border-radius: 12px;
 }
 
 #header h1:last-child {margin-left: 30px;}
@@ -84,7 +89,7 @@ h1 {
 }
 
 #invite:hover {
-    transform: translateY(-140px) rotate(12deg);
+    transform: translateY(-150px) rotate(12deg);
     transition: transform 1s ease-in-out;
 }
 
@@ -99,118 +104,17 @@ h1 {
     inset: 0;
     position: absolute;
     display: flex;
-    align-items: end;
-    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     border: 1.5px var(--black) solid;
     border-radius: 25px;
     background-color: var(--true-white);
     box-shadow: inset -8px -8px 8px var(--grey), inset 8px 8px 12px var(--grey);
+    
+    font-family: mix;
+    font-size: clamp(0.75rem, 4vw, 1.5rem);
 
     z-index: 1;
-}
-
-.menu {
-    height: 12vw;
-    min-height: 65px;
-    max-height: 100px;
-    width: 12vw;
-    min-width: 65px;
-    max-width: 100px;
-
-    border: 1.5px var(--black) solid;
-    border-radius: 100%;
-    box-shadow: inset -5px -5px 2px var(--grey);
-
-    font-family: poxel;
-    font-size: 1rem;
-}
-
-.menu:hover {
-    box-shadow: inset -5px -5px 0 var(--grey);
-    font-size: 1.2rem;
-}
-
-.menu:active {
-    box-shadow: inset -5px -5px 0 var(--grey);
-    font-size: 1.2rem;
-    color: transparent;
-}
-
-#content button:nth-child(4n + 1) {
-    background-color: var(--pink);
-    opacity: 0.8;
-    animation: bounce-1 45s ease-in-out infinite;
-}
-
-#content button:nth-child(4n + 2) {
-    background-color: var(--blue);
-    opacity: 0.55;
-    animation: bounce-2 50s ease-in-out infinite;
-}
-
-#content button:nth-child(4n + 3) {
-    background-color: var(--light-orange);
-    opacity: 0.75;
-    animation: bounce-3 40s ease-in-out infinite;
-}
-
-#content button:nth-child(4n + 4) {
-    background-color: var(--green);
-    opacity: 0.9;
-    animation: bounce-1 45s ease-in-out infinite;
-}
-
-@keyframes bounce-1 {
-    0% {
-        transform: translate(5px, -12px);
-    }
-    25% {
-        transform: translate(50px, 0px);
-    }
-    50% {
-        transform: translate(28px, -30px);
-    }
-    75% {
-        transform: translate(0px, -52px);
-    }
-    100% {
-        transform: translate(5px, -12px);
-    }
-}
-
-@keyframes bounce-2 {
-    0% {
-        transform: translate(-5px, -8px);
-    }
-    25% {
-        transform: translate(50px, -35px);
-    }
-    50% {
-        transform: translate(80px, -8px);
-    }
-    75% {
-        transform: translate(42px, -20px);
-    }
-    100% {
-        transform: translate(-5px, -8px);
-    }
-}
-
-@keyframes bounce-3 {
-    0% {
-        transform: translate(0, 0);
-    }
-    25% {
-        transform: translate(25px, -15px);
-    }
-    50% {
-        transform: translate(35px, -35px);
-    }
-    75% {
-        transform: translate(8px, -80px);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
 }
