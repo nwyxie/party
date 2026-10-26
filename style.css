@@ -63,6 +63,25 @@ mark {
     border-radius: 12px;
 }
 
+button {
+    padding: 5px 12px;
+
+    background-color: var(--light-pink);
+    border: 1px var(--black) dashed;
+    border-radius: 25px;
+    
+    font-family: mix;
+    font-size: 1.2rem;
+
+    transition: 0.5s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--pink);
+    transform: scale(95%);
+    transition: 0.5s ease-in-out;
+}
+
 #header h1:last-child {margin-left: 30px;}
 
 #invite {
@@ -79,7 +98,7 @@ mark {
     align-items: center;
     justify-content: center;
     
-    border: 1.5px var(--black) solid;
+    border: 1.5px var(--black) dashed;
     border-radius: 25px;
     background-color: var(--translucent-white);
     box-shadow: inset -8px -8px 25px var(--true-white), inset 8px 8px 25px var(--true-white);
@@ -89,7 +108,7 @@ mark {
 }
 
 #invite:hover {
-    transform: translateY(-150px) rotate(12deg);
+    transform: translateY(-90px) rotate(12deg);
     transition: transform 1s ease-in-out;
 }
 
@@ -100,15 +119,19 @@ mark {
     width: 65vw;
     min-width: 250px;
     max-width: 450px;
+
     margin: auto;
     inset: 0;
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
 
-    border: 1.5px var(--black) solid;
+    padding: 25px 15px;
+    box-sizing: border-box;
+
+    border: 1.5px var(--black) dashed;
     border-radius: 25px;
     background-color: var(--true-white);
     box-shadow: inset -8px -8px 8px var(--grey), inset 8px 8px 12px var(--grey);
@@ -117,4 +140,22 @@ mark {
     font-size: clamp(0.75rem, 4vw, 1.5rem);
 
     z-index: 1;
+}
+
+#menu {
+    height: 25vh;
+    min-height: 200px;
+    max-height: 400px;
+    width: 65vw;
+    min-width: 250px;
+    max-width: 450px;
+
+    margin: auto;
+    inset: 0;
+    position: absolute;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: end;
+    transform: translateY(16vh);
 }
