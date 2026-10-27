@@ -1,0 +1,167 @@
+/* 
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⡴⢲⡄⠀⠀⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢀⡞⠀⠀⡇⠀⢀⡴⠋⠁⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣸⠁⠀⠀⡇⣠⠟⠀⠀⠀⣼⣠⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣿⠀⢠⢤⡿⠃⣀⠀⢀⡞⠉⠁⠀⠀⠈⠙⠶⡄⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣻⣰⡏⣼⢁⡴⠋⣰⠋⠀⠀⠀⠀⠀⠀⠀⠀⠹⡄⣀⡀⠀⠀⠀⠀
+⠀⠀⠀⢀⡾⠋⠉⠁⠀⠙⠁⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡈⢷⠀⠀⠀⠀
+⠀⠀⠀⣼⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⠀⠀⢀⣧⡾⠁⠀⠀⠀
+⠀⠀⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⠀⠀⣾⠃⠀⠀⠀⠀⠀
+⠀⠀⠀⣹⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠁⠀⠀⡀⠀⠀⢰⡾⠋⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢻⡇⣀⡀⠀⠺⣿⠇⠀⣀⣤⣄⣀⣠⣬⣥⣤⠾⠛⠁⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠉⠛⠓⠂⠤⠤⠖⠊⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    handcoded by @nwyxie ᯓᡣ𐭩
+*/
+
+/* typefaces */
+@font-face {
+    font-family: 'mix stitch';
+    src: url(typefaces/MixStitch.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'a butterfly on a daffodil';
+    src: url(typefaces/AButterflyOnaDaffodil.ttf);
+}
+
+/* root */
+:root {
+    /* colour wheel */
+    --pink: #e7bdc9;
+    --light-pink: #edd6db;
+    --dark-orange: #eacb99;
+    --orange: #eacb99;
+    --yellow: #eed99b;
+    --dark-green: #cfd58c;
+    --green: #d4da9d;
+    --teal: #d1e7e1;
+    --light-teal: #e4ede9;
+    --purple: #d9cdd1;
+    --white: #efefe5;
+    --translucent-white: #efefe557;
+    --black: #222222;
+    --grey: #9f9f9f;
+
+    /* fonts */
+    --text: 'mix stitch';
+    --header: 'a butterfly on a daffodil';
+}
+
+/* main */
+html {
+    font-size: 24px;
+    color: var(--black);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-image: url(imgs/plaid.png);
+    background-size: 380px;
+    background-repeat: repeat;
+}
+
+mark {
+    padding: 2px 8px;
+
+    background-color: var(--light-pink);
+    border: 1px var(--black) solid;
+    border-radius: 25px;
+}
+
+.card {
+    height: clamp(180px, 20vh, 300px);
+    width: clamp(250px, 45vw, 430px);
+    margin: auto;
+    inset: 0;
+    position: absolute;
+
+    padding: 18px;
+    box-sizing: border-box;
+    display: block;
+    align-content: center;
+    justify-items: center;
+
+    border: 1px var(--black) solid;
+    border-radius: 25px;
+    background-color: var(--translucent-white);
+    box-shadow:
+        inset -10px -10px 25px var(--white),
+        inset 10px 10px 25px var(--white);
+    
+    font-family: var(--text);
+
+    transition: 1.5s ease-in-out;
+}
+
+#stack div:nth-child(1) {box-shadow: inset -20px -20px 45px var(--white), inset 20px 20px 45px var(--white), 3px 3px 8px var(--grey); transition: 1.5s ease-in-out; z-index: 999;}
+#stack:hover div:nth-child(1) {transform: translateY(-19vh) rotate(8deg);}
+#stack div:nth-child(2) {box-shadow: inset -30px -30px 45px var(--white), inset 30px 30px 45px var(--white), 2px 2px 6px var(--grey); z-index: 333;}
+#stack div:nth-child(3) {font-size: 0.8rem; line-height: 160%; box-shadow: inset -20px -20px 45px var(--white), inset 20px 20px 45px var(--white); transition: 1.5s ease-in-out; z-index: 1;}
+#stack:hover div:nth-child(3) {transform: translateY(21vh) rotate(-6deg);}
+
+.subtitle {
+    height: fit-content;
+    width: fit-content;
+    margin-top: 12px;
+    position: absolute;
+    text-align: center;
+    align-self: center;
+    padding: 2px 12px;
+
+    font-family: var(--text);
+    background-color: var(--light-teal);
+    border-radius: 25px;
+}
+
+.subtitle:hover {
+    background-color: var(--white);
+}
+
+.btn {
+    height: 1rem;
+    width: 1rem;
+
+    background-color: var(--yellow);
+    border: 1px var(--black) solid;
+    border-radius: 0 25px 25px 0;
+
+    transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--white);
+
+    transform: translateX(6px);
+    transition: 0.5s ease-in-out;
+}
+
+/* fun */
+.rainbow {
+    display: flex;
+
+    font-family: var(--header);
+    font-size: clamp(3rem, 12vw, 5rem);
+    line-height: 50%;
+
+    text-shadow: 
+        1px 1px var(--black),
+        -1px -1px var(--black),
+        0 -1px var(--black),
+        1px 0 var(--black);
+}
+
+.rainbow span:nth-child(8n + 1) {color: var(--light-pink);}
+.rainbow span:nth-child(8n + 2) {color: var(--green);}
+.rainbow span:nth-child(8n + 3) {color: var(--yellow);}
+.rainbow span:nth-child(8n + 4) {color: var(--light-teal);}
+.rainbow span:nth-child(8n + 5) {color: var(--orange);}
+.rainbow span:nth-child(8n + 6) {color: var(--purple);}
+.rainbow span:nth-child(8n + 7) {color: var(--teal);}
+.rainbow span:nth-child(8n + 7) {color: var(--dark-green);}
