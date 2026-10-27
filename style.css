@@ -76,8 +76,8 @@ mark {
 }
 
 .card {
-    height: clamp(180px, 20vh, 300px);
-    width: clamp(250px, 45vw, 430px);
+    height: clamp(150px, 20vh, 300px);
+    width: clamp(220px, 65vw, 430px);
     margin: auto;
     inset: 0;
     position: absolute;
