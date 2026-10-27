@@ -104,7 +104,7 @@ mark {
 #stack:hover div:nth-child(1) {transform: translateY(-19vh) rotate(8deg);}
 #stack div:nth-child(2) {box-shadow: inset -30px -30px 45px var(--white), inset 30px 30px 45px var(--white), 2px 2px 6px var(--grey); z-index: 333;}
 #stack div:nth-child(3) {font-size: 0.8rem; line-height: 160%; box-shadow: inset -20px -20px 45px var(--white), inset 20px 20px 45px var(--white); transition: 1.5s ease-in-out; z-index: 1;}
-#stack:hover div:nth-child(3) {transform: translateY(21vh) rotate(-6deg);}
+#stack:hover div:nth-child(3) {transform: translateY(19vh) rotate(-6deg);}
 
 .subtitle {
     height: fit-content;
