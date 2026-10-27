@@ -102,9 +102,11 @@ mark {
 
 #stack div:nth-child(1) {box-shadow: inset -20px -20px 45px var(--white), inset 20px 20px 45px var(--white), 3px 3px 8px var(--grey); transition: 1.5s ease-in-out; z-index: 999;}
 #stack:hover div:nth-child(1) {transform: translateY(-19vh) rotate(8deg);}
+#stack:active div:nth-child(1) {transform: translateY(-19vh) rotate(8deg);}
 #stack div:nth-child(2) {box-shadow: inset -30px -30px 45px var(--white), inset 30px 30px 45px var(--white), 2px 2px 6px var(--grey); z-index: 333;}
 #stack div:nth-child(3) {font-size: 0.8rem; line-height: 160%; box-shadow: inset -20px -20px 45px var(--white), inset 20px 20px 45px var(--white); transition: 1.5s ease-in-out; z-index: 1;}
 #stack:hover div:nth-child(3) {transform: translateY(19vh) rotate(-6deg);}
+#stack:active div:nth-child(3) {transform: translateY(19vh) rotate(-6deg);}
 
 .subtitle {
     height: fit-content;
@@ -124,6 +126,10 @@ mark {
     background-color: var(--white);
 }
 
+.subtitle:active {
+    background-color: var(--white);
+}
+
 .btn {
     height: 1rem;
     width: 1rem;
@@ -136,6 +142,13 @@ mark {
 }
 
 .btn:hover {
+    background-color: var(--white);
+
+    transform: translateX(6px);
+    transition: 0.5s ease-in-out;
+}
+
+.btn:active {
     background-color: var(--white);
 
     transform: translateX(6px);
