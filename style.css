@@ -54,7 +54,6 @@
 
 /* main */
 html {
-    font-size: 24px;
     color: var(--black);
 }
 
@@ -96,6 +95,7 @@ mark {
         inset 10px 10px 25px var(--white);
     
     font-family: var(--text);
+    font-size: 24px;
 
     transition: 1.5s ease-in-out;
 }
@@ -104,7 +104,7 @@ mark {
 #stack:hover div:nth-child(1) {transform: translateY(-19vh) rotate(8deg);}
 #stack:active div:nth-child(1) {transform: translateY(-19vh) rotate(8deg);}
 #stack div:nth-child(2) {box-shadow: inset -30px -30px 45px var(--white), inset 30px 30px 45px var(--white), 2px 2px 6px var(--grey); z-index: 333;}
-#stack div:nth-child(3) {font-size: 0.8rem; line-height: 160%; box-shadow: inset -20px -20px 45px var(--white), inset 20px 20px 45px var(--white); transition: 1.5s ease-in-out; z-index: 1;}
+#stack div:nth-child(3) {font-size: 1rem; line-height: 160%; box-shadow: inset -20px -20px 45px var(--white), inset 20px 20px 45px var(--white); transition: 1.5s ease-in-out; z-index: 1;}
 #stack:hover div:nth-child(3) {transform: translateY(19vh) rotate(-6deg);}
 #stack:active div:nth-child(3) {transform: translateY(19vh) rotate(-6deg);}
 
@@ -160,7 +160,7 @@ mark {
     display: flex;
 
     font-family: var(--header);
-    font-size: clamp(3rem, 12vw, 5rem);
+    font-size: clamp(4.2rem, 12vw, 5rem);
     line-height: 50%;
 
     text-shadow: 
